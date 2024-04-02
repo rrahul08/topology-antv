@@ -1,10 +1,11 @@
 import './App.css';
-import  Graph  from './GraphComponent';
+import MyGraphComponent from './GraphComponent';
+
 
 function App() {
   return (
     <div className="App">
-      <Graph/>
+      <MyGraphComponent/>
     </div>
   );
 }
