@@ -6,11 +6,11 @@ import 'react-dropdown/style.css';
 const options = ['ospf', 'isis', 'bgp', 'rip', 'eigrp'];
 const defaultOption = 'Labels';
 
-const MyGraphComponent = () => {
+const GraphHighlight = () => {
   const containerRef = useRef(null);
   const [graphInstance, setGraphInstance] = useState(null); // State to hold the G6 graph instance
   const [selectedOption, setSelectedOption] = useState(defaultOption);
-  const [nodeClusterProperty, setNodeClusterProperty] = useState(null); ;
+  const [nodeClusterProperty, setNodeClusterProperty] = useState(null); 
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -189,7 +189,7 @@ const MyGraphComponent = () => {
         ((filterValue === sourceCluster) && (filterValue === targetCluster))
    
         ) {
-          // Highlight edges connected to the highlighted nodes
+         
           edge.update({
             style: {
               stroke: '#000000', // Brighter color for highlighted edges (adjust as needed)
@@ -225,4 +225,4 @@ const MyGraphComponent = () => {
   );
 };
 
-export default MyGraphComponent;
+export default GraphHighlight;

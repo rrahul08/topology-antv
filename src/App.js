@@ -1,12 +1,14 @@
 import './App.css';
-import MyGraphComponent from './GraphComponent';
+import GraphHighlight from './GraphHighlight';
+import GraphLabel from './GraphLabel';
 
 
 
 function App() {
   return (
     <div className="App">
-      <MyGraphComponent/>
+      {/* <GraphHighlight/> */}
+      <GraphLabel/>
     
     </div>
   );
