@@ -85,6 +85,7 @@ const GraphHighlight = () => {
       ],
     };
 
+ 
    
 
     const instance = new G6.Graph({
@@ -101,7 +102,7 @@ const GraphHighlight = () => {
         type: 'radial',
         unitRadius: 140,
         center: [800, 400],
-        nodeSpacing: 200,
+        nodeSpacing: 800,
         circular: true,
         linkDistance: 300,
         preventOverlap: true,
@@ -125,13 +126,14 @@ const GraphHighlight = () => {
       },
       defaultEdge: {
         style: {
-          stroke: '#e2e2e2',
+          stroke: '#000000',
         },
       },
       autoFit: 'view',
     });
 
     instance.data(data);
+  
   
 
 

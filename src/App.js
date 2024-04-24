@@ -1,14 +1,13 @@
 import './App.css';
-import GraphHighlight from './GraphHighlight';
-import GraphLabel from './GraphLabel';
+
+import Radialisis from './Radialisis';
 
 
 
 function App() {
   return (
     <div className="App">
-      {/* <GraphHighlight/> */}
-      <GraphLabel/>
+      <Radialisis/>
     
     </div>
   );
